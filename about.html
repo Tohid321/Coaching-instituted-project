@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="eg">
+
+<head>
+    <meta name="viewport" content="with=device-widt, initial-scale=1.0">
+    <tital>
+        <!--   <div class="heading">
+             <u> Welcome to Chanakya Academy</u> 
+            </div> -->
+    </tital>
+    <link rel="icon" href="images/logo.png" alt="coching logo" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/newlogo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                     <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+      <h1>
+        About Us</h1>
+    </section>
+
+    <!--about us contante-->
+    <section class="about-us">
+        
+        <div class="row">
+            <div class="about-col">
+                <h1>We are the best Academyic Institude In Chhindwara</h1>
+                <p>Shri Chanakya Academy Classes is a place where teachers, students and parents work together to achieve prosperous and secure future in academics for every student.
+                    We all feel very happy to nurture, shape and channelize the talent and energy of our students in the right direction. Unlike other coaching institute directors themselves teach the important subjects like mathematics and Biology hers in GCC and students remain focused on studies due to our supervision and vigilance.
+                    I would ask you to take advantage of this great opportunity and join us in our endeavor to actively contribute to the overall improvement of this increasingly globalized society.</p>
+                <a href="index.html" class="hero-btn red-btn">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="images/about.jpg">
+            </div>
+        </div>
+
+    </section>
+   
+
+<!--Footer-->
+<section class="footer">
+    <h5>About Us</h5>
+    <p>
+        Every good Academy was founded on an idea — something the<br>
+         current marketplace might not yet offer. What was your idea?
+    </p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p> Made By &NonBreakingSpace; <i class="fa fa-heart-o"></i> Tohid Siddique</p>
+</section>
+
+</body>
+
+
+
+    <!-- javaScript code her to close and open menu-->
+    <script>
+        var nalink = document.getElementById("navLinks");
+        function showmenu() {
+            nalink.style.right = "0";
+        }
+        function hidemenu() {
+            nalink.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
+</html>
