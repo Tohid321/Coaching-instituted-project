@@ -1,0 +1,423 @@
+*{
+    margin : 0;
+    padding : 0;
+    font-family: "Poppins", sans-serif;
+}
+.heading{
+    text-align: center;
+    font-size: 30px;
+    font-style: italic ;
+    border:double;
+    background-color:aqua; 
+    color: black;
+    padding: 2rem;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/banner.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 3% 4%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 80px;
+}
+.nav-links{
+ flex: 1;
+ text-align: right;
+}
+.nav-links ul li{
+     list-style: none;
+     display: inline-block;
+     padding: 8px 12px;
+     position: relative;
+}
+.nav-links ul li a{
+    color:aliceblue;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: red ;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+    
+}
+.text-box{
+     width: 90%;
+     color: aliceblue;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     text-align: center;
+
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px;
+    font-size: 14px;
+    color: aliceblue;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: aliceblue;
+    border: solid;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+}
+.hero-btn:hover{
+ border:  solid;
+ background: rgb(216, 77, 23) ;
+ transition: 1s;
+}
+nav .fa{
+    display: none;
+}
+@media(max-width: 700px)
+{
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: fixed;
+        background: crimson;
+        height: 100vh;
+        width: 200px;
+        top:0;
+        right: -200px;
+        text-align: left;
+        z-index: 2; 
+    }
+    .text-box p{
+        margin: 10px;
+        font-size: 12px;
+        color: aliceblue;
+        text-align: auto;
+        position: relative;
+
+    }
+    nav .fa{
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+        padding: 30px;
+    }
+}
+/*------course----*/
+
+.course{
+width: 80%;
+margin: auto;
+text-align: center;
+padding-top: 100px ;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: black;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    grid-gap: 8%;
+    justify-content: space-betweens;
+}
+.course-col{
+    flex-basis: 28%;
+    background: rgb(55, 169, 204);
+    border-radius: 12px;
+    margin-bottom: 6%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+.row2{
+    margin-top: 5%;
+    display: flex;
+    grid-gap: 8%;
+    justify-content: space-betweens;
+}
+.course-col:hover{
+    box-shadow:0 0 20px 0px rgb(64, 7, 219);
+
+}
+@media (max-width: 700px)
+{
+ .row{
+     display: grid;
+     margin-top: 18%;
+ }
+ .row2{
+    display: grid;
+    margin-top: 18%;
+ }
+}
+
+/*----campus------*/
+.campus{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.row{
+    margin-top: 05%;
+    display: flex;
+    grid-gap: 8%;
+    justify-content: space-betweens;
+}
+.campus-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30%;
+    position: relative;
+    overflow: hidden;
+}
+.campus-col img{
+    width: 100%;
+    display: block;
+    border-radius: 3%;
+    
+}
+
+ h3{
+    display: inline-block;
+    color: black;
+    border: solid;
+    padding: 12px 34px;
+    font-size: 18px;
+    position: relative;
+    background-color: rgb(233, 149, 149) ;
+}
+/*------Facilities--*/
+
+.facilities{
+  text-align: center;
+  width: auto;
+  margin-top: 5%;
+}
+.facilities-col{
+    flex-basis: 50%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: center;
+}
+.facilities-col h4{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: center;
+    border: solid;
+    display: inline-block;
+    background-color: rgb(233, 149, 149) ;
+
+}
+.facilities-col p{
+    padding: 0;
+}
+.facilities-col img{
+    width: 100%;
+    border-radius: 10px;
+    padding-left: 8%;
+}
+/*-----testimonials-----*/
+
+.testimonials{
+    width: 80%;
+    margin: auto;
+    padding-top: 6%;
+    text-align: center;
+}
+.testimonial-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background-color: rgb(209, 209, 231);
+    padding: 25px;
+    cursor: pointer;
+    display: flex;   
+}
+.testimonial-col img{
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+.testimonial-col p{
+    padding: 0;
+}
+.testimonial-col .fa{
+    color: green;
+}
+@media (max-width: 700px)
+{
+    .testimonial-col img{
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+}
+
+/*------call to action-----*/
+ 
+.cta
+{
+   margin: 100px auto;
+   width: 80%;
+   background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/banner2.jpg) ;
+   background-position: center;
+   border-radius: 10px;
+   text-align: center;
+   padding: 100px 0;
+}
+.cta h4{
+    color: aliceblue;
+    margin-bottom: 40px;
+    padding: 0;
+}
+@media (max-width: 700px)
+{
+    .cta h4{
+        font-size: 24px;
+    }
+}
+
+/*-----footer-----*/
+.footer
+{
+ text-align: center;
+ width: 100%;
+ padding: 30px 0;   
+}
+.footer h5{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    ;
+}
+.icons .fa{
+    color: red;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;    
+}
+.fa-heart-o{
+    color: red;
+}
+
+/*-----about us page*------*/
+
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/background.jpg);
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    color: aliceblue;
+}
+.sub-header h1{
+    margin-top: 8px;
+}
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.about-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.about-col img{
+    width: 100%;
+}
+.about-col h1{
+    padding-top: 0;
+}
+.about-col p{
+    padding: 15px 0 25px;
+}
+.red-btn{
+    border: 1px solid #f44336;
+    background: transparent;
+    color:black;
+}
+.red-btn:hover{
+    color:white;
+}
+/*------- contact us page-------*/
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+.location iframe{
+    width: 100%;
+}
+.contact-us{
+    width: 80%;
+    margin: auto;
+}
+.contact-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.contact-col div .fa{ 
+    font-size: 28px;
+    color: #c5190d;
+    margin: 10px;
+    margin-right: 10px;
+}
+.contact-col div p{
+    padding: 0;
+}
+.campus-col div h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 400;
+}
+  .contact-col input, .contact-col textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
